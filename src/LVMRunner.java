@@ -10,8 +10,10 @@ public class LVMRunner {
             if(command.contains("install-drive")){
                 String[] commandList = command.split(" ");
                 HardDrive hd = new HardDrive(commandList[1], commandList[2]);
-                System.out.println(hd.toString());
+                System.out.println("Drive " + hd.getName() + " installed");
+                //System.out.println(hd.toString());
             }
+            else if(command.contains("list-drives"));
         }
     }
 }
