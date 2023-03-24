@@ -11,7 +11,11 @@ private ArrayList<PV> pvs = new ArrayList<>();
         pvs.add(pv);
     }
     public int totalSpace(){
-        return 0;
+        int sum = 0;
+        for(int i = 0; i < pvs.size(); i++){
+            sum += pvs.get(i).getSize();
+        }
+        return sum;
     }
     public int availableSpace(){
         return 0;

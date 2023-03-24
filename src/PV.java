@@ -4,6 +4,9 @@ public class PV extends LVM{
         super(name);
         correspDrive = driveName;
     }
+    public int getSize(){
+        return Integer.parseInt(correspDrive.getSize());
+    }
 
     public String toString(){
         return super.getName() + ": " + "[" + correspDrive.getSize() + "] [" + super.getRandomUUID() + "]";
