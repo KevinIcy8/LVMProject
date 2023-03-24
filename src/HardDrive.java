@@ -8,4 +8,8 @@ public class HardDrive extends LVM{
     public String toString(){
         return super.getName() + " [" + size + "][" + super.getRandomUUID() + "]";
     }
+
+    public String getSize() {
+        return size;
+    }
 }
