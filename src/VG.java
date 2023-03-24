@@ -20,4 +20,8 @@ private ArrayList<PV> pvs = new ArrayList<>();
     public int availableSpace(){
         return 0;
     }
+
+    public String toString(){
+        return super.getName() + ": total:[" + totalSpace() + "]" + pvs + "[" + super.getRandomUUID() + "]";
+    }
 }

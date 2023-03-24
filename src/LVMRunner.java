@@ -40,6 +40,11 @@ public class LVMRunner {
                 String[] vgList = command.split(" ");
                 System.out.println(SystemChecker.pvExtend(pvs,vgList,vgs));
             }
+            else if(command.equals("vglist")){
+                for(int i = 0; i < vgs.size(); i++) {
+                    System.out.println(vgs.get(i).toString());
+                }
+            }
         }
     }
 }
